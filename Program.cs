@@ -8,6 +8,12 @@ namespace DataTypes
 {
     class Program
     {
+        enum Gender
+        {
+            Male = 0,
+            Female = 1
+        }
+
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -31,6 +37,10 @@ namespace DataTypes
             {
                 Console.WriteLine("Only numbers");
             };
+
+            DateTime birthday = new DateTime(year, month, day);
+            TimeSpan age = DateTime.Today - birthday;
+            Console.WriteLine("Age is: " + ((new DateTime(1, 1, 1) +age).Year -1));
 
             Console.ReadKey();
         }
