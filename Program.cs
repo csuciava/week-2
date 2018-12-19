@@ -10,8 +10,8 @@ namespace DataTypes
     {
         enum Gender
         {
-            Male = 0,
-            Female = 1
+            Male = 65,
+            Female = 63
         }
 
         static void Main(string[] args)
@@ -39,8 +39,26 @@ namespace DataTypes
             };
 
             DateTime birthday = new DateTime(year, month, day);
-            TimeSpan age = DateTime.Today - birthday;
-            Console.WriteLine("Age is: " + ((new DateTime(1, 1, 1) +age).Year -1));
+            TimeSpan difInDays = DateTime.Today - birthday;
+            int age = (new DateTime(1, 1, 1) + difInDays).Year -1;
+
+            int? gender = null;
+            Console.WriteLine("Enter the gender (M/F): ");
+            string c = Console.ReadLine();
+
+            if(c == "M" || c == "m")
+            {
+                gender = (int) Gender.Male;
+            } else if(c == "F"|| c=="f")
+            {
+                gender = (int) Gender.Female;
+            }
+
+            if(gender != null)
+            {
+                Console.WriteLine("Retirement age: " + gender);
+                Console.WriteLine("Current age: " + age + " " + ((gender - age < 20) ? "Close :)":"Still young"));
+            }
 
             Console.ReadKey();
         }
