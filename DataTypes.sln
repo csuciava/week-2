@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes.csproj", "{012C772B-BD7C-449F-B33F-112919FCF365}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes1", "DataTypes1.csproj", "{012C772B-BD7C-449F-B33F-112919FCF365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes2", "..\DataTypes2\DataTypes2.csproj", "{2E8C930E-65CE-4EAD-8AF2-2625D3A494EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{012C772B-BD7C-449F-B33F-112919FCF365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012C772B-BD7C-449F-B33F-112919FCF365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012C772B-BD7C-449F-B33F-112919FCF365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8C930E-65CE-4EAD-8AF2-2625D3A494EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8C930E-65CE-4EAD-8AF2-2625D3A494EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8C930E-65CE-4EAD-8AF2-2625D3A494EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8C930E-65CE-4EAD-8AF2-2625D3A494EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
